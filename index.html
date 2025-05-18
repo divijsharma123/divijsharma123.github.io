@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divij Sharma | FinTech Engineer</title>
+    <title>Divij Kishore Sharma | Backend Engineer | FinTech</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -13,26 +13,26 @@
             --text: #ccd6f6;
             --text-secondary: #8892b0;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: var(--primary);
             color: var(--text);
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
+
         header {
             display: flex;
             justify-content: space-between;
@@ -45,33 +45,33 @@
             backdrop-filter: blur(10px);
             z-index: 100;
         }
-        
+
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
             color: var(--accent);
         }
-        
+
         nav ul {
             display: flex;
             list-style: none;
         }
-        
+
         nav ul li {
             margin-left: 2rem;
         }
-        
+
         nav ul li a {
             color: var(--text);
             text-decoration: none;
             font-size: 0.9rem;
             transition: color 0.3s ease;
         }
-        
+
         nav ul li a:hover {
             color: var(--accent);
         }
-        
+
         .resume-button {
             background: transparent;
             border: 1px solid var(--accent);
@@ -82,56 +82,57 @@
             margin-left: 2rem;
             cursor: pointer;
             transition: background 0.3s ease;
+            text-decoration: none; /* Added for <a> tag */
         }
-        
+
         .resume-button:hover {
             background: rgba(100, 255, 218, 0.1);
         }
-        
+
         section {
             padding: 5rem 0;
         }
-        
+
         section:first-of-type {
             padding-top: 10rem;
         }
-        
+
         h1, h2, h3 {
             margin-bottom: 1rem;
         }
-        
+
         h1 {
             font-size: 3rem;
             font-weight: 600;
         }
-        
+
         h2 {
             font-size: 2rem;
             color: var(--accent);
         }
-        
+
         h3 {
             font-size: 1.5rem;
             color: var(--text);
         }
-        
+
         p {
             margin-bottom: 1rem;
             color: var(--text-secondary);
             font-size: 1.1rem;
         }
-        
+
         .section-title {
             display: flex;
             align-items: center;
             margin-bottom: 2.5rem;
         }
-        
+
         .section-title h2 {
             margin-bottom: 0;
             margin-right: 1rem;
         }
-        
+
         .section-title::after {
             content: '';
             display: block;
@@ -139,7 +140,7 @@
             width: 250px;
             background-color: var(--secondary);
         }
-        
+
         .project-card {
             background-color: var(--secondary);
             border-radius: 6px;
@@ -147,26 +148,26 @@
             margin-bottom: 2rem;
             transition: transform 0.3s ease;
         }
-        
+
         .project-card:hover {
             transform: translateY(-5px);
         }
-        
+
         .project-title {
             color: var(--text);
             margin-bottom: 1rem;
         }
-        
+
         .project-desc {
             margin-bottom: 1.5rem;
         }
-        
+
         .tech-stack {
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 1rem;
         }
-        
+
         .tech-tag {
             background: rgba(100, 255, 218, 0.1);
             color: var(--accent);
@@ -176,7 +177,7 @@
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .metrics {
             display: flex;
             margin-top: 1rem;
@@ -184,78 +185,78 @@
             border-top: 1px solid rgba(100, 255, 218, 0.1);
             font-weight: 500;
         }
-        
+
         .metric {
             margin-right: 2rem;
             color: var(--text);
         }
-        
+
         .metric span {
             color: var(--accent);
             font-weight: bold;
         }
-        
+
         .experience-item {
             margin-bottom: 3rem;
         }
-        
+
         .exp-header {
             display: flex;
             justify-content: space-between;
             margin-bottom: 0.5rem;
         }
-        
+
         .exp-company {
             color: var(--accent);
             font-weight: 500;
         }
-        
+
         .exp-duration {
             color: var(--text-secondary);
             font-size: 0.9rem;
         }
-        
+
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 2rem;
         }
-        
+
         .skill-category {
             background-color: var(--secondary);
             padding: 1.5rem;
             border-radius: 6px;
         }
-        
+
         .skill-category h3 {
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
-        
+
         .skill-list {
             list-style: none;
         }
-        
+
         .skill-list li {
             margin-bottom: 0.5rem;
             color: var(--text-secondary);
             display: flex;
             align-items: center;
         }
-        
+
         .skill-list li::before {
             content: '▹';
             color: var(--accent);
             margin-right: 0.5rem;
         }
-        
+
         .contact-form {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             margin-top: 2rem;
         }
-        
+
         .contact-form input, .contact-form textarea {
             background-color: var(--secondary);
             border: none;
@@ -264,13 +265,13 @@
             color: var(--text);
             font-size: 1rem;
         }
-        
+
         .contact-form textarea {
             grid-column: span 2;
             min-height: 150px;
             resize: vertical;
         }
-        
+
         .submit-btn {
             grid-column: span 2;
             background-color: transparent;
@@ -282,42 +283,42 @@
             cursor: pointer;
             transition: background 0.3s ease;
         }
-        
+
         .submit-btn:hover {
             background: rgba(100, 255, 218, 0.1);
         }
-        
+
         .social-links {
             display: flex;
             justify-content: center;
             margin-top: 3rem;
         }
-        
+
         .social-links a {
             color: var(--text-secondary);
             margin: 0 1rem;
             font-size: 1.5rem;
             transition: color 0.3s ease, transform 0.3s ease;
         }
-        
+
         .social-links a:hover {
             color: var(--accent);
             transform: translateY(-3px);
         }
-        
+
         footer {
             text-align: center;
             padding: 2rem 0;
             color: var(--text-secondary);
             font-size: 0.9rem;
         }
-        
+
         .eu-focus {
             border-left: 3px solid var(--accent);
             padding-left: 1rem;
             margin: 2rem 0;
         }
-        
+
         .testimonial {
             background-color: var(--secondary);
             padding: 2rem;
@@ -325,7 +326,7 @@
             margin-bottom: 2rem;
             position: relative;
         }
-        
+
         .testimonial::before {
             content: '"';
             font-size: 4rem;
@@ -335,58 +336,58 @@
             color: var(--accent);
             opacity: 0.3;
         }
-        
+
         .testimonial p {
             font-style: italic;
         }
-        
+
         .testimonial-author {
             display: flex;
             align-items: center;
             margin-top: 1rem;
         }
-        
+
         .testimonial-author img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             margin-right: 1rem;
         }
-        
+
         .author-info h4 {
             color: var(--text);
         }
-        
+
         .author-info p {
             font-size: 0.9rem;
             margin: 0;
         }
-        
+
         @media (max-width: 768px) {
             header {
                 padding: 1.5rem 2rem;
             }
-            
+
             nav ul {
                 display: none;
             }
-            
+
             h1 {
                 font-size: 2.5rem;
             }
-            
+
             .contact-form {
                 grid-template-columns: 1fr;
             }
-            
+
             .contact-form textarea {
                 grid-column: span 1;
             }
-            
+
             .submit-btn {
                 grid-column: span 1;
             }
-            
+
             .section-title::after {
                 width: 100px;
             }
@@ -405,30 +406,30 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><button class="resume-button">Resume</button></li>
+                    <li><a href="https://raw.githubusercontent.com/divijsharma123/divijsharma123.github.io/main/Divij_Sharma_Resume.pdf" class="resume-button" download="Divij_Sharma_Resume.pdf">Resume</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <main class="container">
         <section id="about">
             <p>Hello, my name is</p>
             <h1>Divij Sharma.</h1>
             <h3>I build scalable financial systems.</h3>
             <p>I'm a software engineer specializing in building high-performance, scalable payment systems and financial infrastructure. Currently focused on building secure transaction processing platforms to handle millions of payments daily at <span style="color: var(--accent);">Mobikwik</span>.</p>
-            
+
             <div class="eu-focus">
                 <h3>Why I'm the right fit for European FinTech</h3>
                 <p>With extensive experience in building real-time payment systems, subscription engines, and handling high-volume transactions, I bring specialized expertise highly relevant to the European financial technology ecosystem. I'm particularly interested in contributing to innovative payment solutions that align with the EU's regulatory frameworks like PSD2 and GDPR.</p>
             </div>
         </section>
-        
+
         <section id="expertise">
             <div class="section-title">
                 <h2>FinTech Expertise</h2>
             </div>
-            
+
             <div class="project-card">
                 <h3 class="project-title">Payment Systems Architecture</h3>
                 <p class="project-desc">Designed and implemented real-time, event-driven payment systems handling million+ daily transactions with 99.95% uptime. My architectures focus on high availability, scalability, and regulatory compliance.</p>
@@ -438,7 +439,7 @@
                     <div class="metric">System Uptime: <span>99.95%</span></div>
                 </div>
             </div>
-            
+
             <div class="project-card">
                 <h3 class="project-title">Subscription & Recurring Payments</h3>
                 <p class="project-desc">Built enterprise-grade subscription engines that manage recurring billing cycles, payment retries, and automated notification systems with a focus on European payment methods.</p>
@@ -448,7 +449,7 @@
                     <div class="metric">Error Rate: <span>&lt;0.1%</span></div>
                 </div>
             </div>
-            
+
             <div class="project-card">
                 <h3 class="project-title">Financial Data Architecture</h3>
                 <p class="project-desc">Designed data models and pipelines for financial transactions, ensuring data consistency, auditability, and compliance with international financial regulations.</p>
@@ -458,12 +459,12 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="projects">
             <div class="section-title">
                 <h2>Featured Projects</h2>
             </div>
-            
+
             <div class="project-card">
                 <h3 class="project-title">Real-time Payout Engine</h3>
                 <p class="project-desc">Redesigned legacy cron-based payout system to a modern event-driven architecture, enabling near-instant settlements for merchants and reducing transaction processing time by 30%. Implemented comprehensive monitoring and alerting.</p>
@@ -482,7 +483,7 @@
                     <div class="metric">Merchants: <span>10k+</span></div>
                 </div>
             </div>
-            
+
             <div class="project-card">
                 <h3 class="project-title">Scalable Subscription System</h3>
                 <p class="project-desc">Built a comprehensive subscription management system integrated with payment processing capabilities. The system handles subscription creation, billing cycles, payment retries, notifications, and cancellations at scale.</p>
@@ -498,10 +499,11 @@
                     <div class="metric">Daily Transactions: <span>1.5M+</span></div>
                 </div>
             </div>
-            
+
             <div class="project-card">
                 <h3 class="project-title">Invoicing System Redesign</h3>
-                <p class="project-desc">Developed a comprehensive invoicing system handling both customer and vendor invoices with real-time commission calculations, significantly improving financial transparency and reducing operational errors.</p>
+                <p class="project-desc">Developed a comprehensive invoicing system handling both customer and vendor invoices with real-time commission calculations, significantly improving financial
+                    transparency and reducing operational errors.</p>
                 <div class="tech-stack">
                     <div class="tech-tag">Java</div>
                     <div class="tech-tag">Spring Boot</div>
@@ -515,12 +517,12 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="experience">
             <div class="section-title">
                 <h2>Experience</h2>
             </div>
-            
+
             <div class="experience-item">
                 <div class="exp-header">
                     <h3>Software Engineer</h3>
@@ -536,7 +538,7 @@
                     <li>Enhanced monitoring with Prometheus and New Relic for faster issue resolution.</li>
                 </ul>
             </div>
-            
+
             <div class="experience-item">
                 <div class="exp-header">
                     <h3>Software Development Engineer - 1</h3>
@@ -550,7 +552,7 @@
                     <li>Optimized product upload and download times by 35%, ensuring scalability for increasing vendor transactions.</li>
                 </ul>
             </div>
-            
+
             <div class="experience-item">
                 <div class="exp-header">
                     <h3>Associate Software Development Engineer - 2</h3>
@@ -563,12 +565,12 @@
                 </ul>
             </div>
         </section>
-        
+
         <section id="skills">
             <div class="section-title">
                 <h2>Technical Skills</h2>
             </div>
-            
+
             <div class="skills-container">
                 <div class="skill-category">
                     <h3>Backend Development</h3>
@@ -580,7 +582,7 @@
                         <li>RESTful APIs</li>
                     </ul>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Databases & Storage</h3>
                     <ul class="skill-list">
@@ -591,7 +593,7 @@
                         <li>Redis</li>
                     </ul>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Cloud & DevOps</h3>
                     <ul class="skill-list">
@@ -602,7 +604,7 @@
                         <li>CI/CD Pipelines</li>
                     </ul>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Messaging & Streaming</h3>
                     <ul class="skill-list">
@@ -611,7 +613,7 @@
                         <li>Message queues</li>
                     </ul>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Monitoring & Analytics</h3>
                     <ul class="skill-list">
@@ -621,7 +623,7 @@
                         <li>Logging & Tracing</li>
                     </ul>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Problem Solving</h3>
                     <ul class="skill-list">
@@ -634,12 +636,12 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="testimonials">
             <div class="section-title">
                 <h2>Testimonials</h2>
             </div>
-            
+
             <div class="testimonial">
                 <p>"Divij's work on our payment processing system was exceptional. He completely redesigned our architecture, resulting in faster payouts and significantly improved reliability. His deep understanding of financial systems and attention to detail made him an invaluable asset to our team."</p>
                 <div class="testimonial-author">
@@ -650,7 +652,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="testimonial">
                 <p>"The invoicing system Divij designed has transformed our vendor relationships. The transparency and error reduction have substantially improved our operations and vendor satisfaction metrics. His ability to understand both the technical and business requirements sets him apart."</p>
                 <div class="testimonial-author">
@@ -662,21 +664,21 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="contact">
             <div class="section-title">
                 <h2>Contact</h2>
             </div>
-            
+
             <p>I'm currently looking for new opportunities in European FinTech. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            
+
             <form class="contact-form">
                 <input type="text" placeholder="Name" required>
                 <input type="email" placeholder="Email" required>
                 <textarea placeholder="Message" required></textarea>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
-            
+
             <div class="social-links">
                 <a href="https://linkedin.com/in/divij-sharma2111" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/divijsharma123" target="_blank"><i class="fab fa-github"></i></a>
@@ -685,46 +687,25 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
         <p>© 2025 Divij Sharma. All rights reserved.</p>
     </footer>
 
-    <!-- Base64 encoded resume data (this would be your actual resume PDF encoded as base64) -->
     <script>
-        // This is a base64 representation of a minimal PDF file
-        // In a real implementation, you would replace this with your actual resume PDF encoded as base64
-        const resumeBase64 = "JVBERi0xLjcKJeLjz9MKNSAwIG9iago8PAovRmlsdGVyIC9GbGF0ZURlY29kZQovTGVuZ3RoIDM4Cj4+CnN0cmVhbQp4nCvkMlAwUDC1NNUzMVGwMDHUszQ1tVJIzs8rSczM4wIAQ+8GYAplbmRzdHJlYW0KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL01lZGlhQm94IFswIDAgNTk1LjMyIDg0MS45Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCi9QYXJlbnQgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL1RpbWVzLVJvbWFuCj4+CmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYNCjAwMDAwMDAyNzQgMDAwMDAgbg0KMDAwMDAwMDIxNSAwMDAwMCBuDQowMDAwMDAwMDk0IDAwMDAwIG4NCjAwMDAwMDAzMjMgMDAwMDAgbg0KMDAwMDAwMDAwOSAwMDAwMCBuDQp0cmFpbGVyCjw8Ci9TaXplIDYKL1Jvb3QgMSAwIFIKPj4Kc3RhcnR4cmVmCjM5MQolJUVPRgo=";
-
-        // Function to trigger download of base64 encoded file
-        function downloadBase64File(base64Data, fileName, mimeType) {
-            const linkSource = `data:${mimeType};base64,${base64Data}`;
-            const downloadLink = document.createElement('a');
-            
-            downloadLink.href = linkSource;
-            downloadLink.download = fileName;
-            downloadLink.click();
-            downloadLink.remove();
-        }
-
         document.addEventListener('DOMContentLoaded', function() {
-            const resumeButton = document.querySelector('.resume-button');
-            resumeButton.addEventListener('click', function() {
-                // Trigger download of the resume PDF
-                downloadBase64File(resumeBase64, 'Divij_Sharma_Resume.pdf', 'application/pdf');
-            });
-            
+
             const contactForm = document.querySelector('.contact-form');
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 alert('Form submission functionality would be implemented here');
             });
-            
+
             // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
-                    
+
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
