@@ -396,7 +396,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">DS</div>
+            <div class="logo">Divij Kishore Sharma | backend engineer | Fintech</div>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -690,11 +690,28 @@
         <p>© 2025 Divij Sharma. All rights reserved.</p>
     </footer>
 
+    <!-- Base64 encoded resume data (this would be your actual resume PDF encoded as base64) -->
     <script>
+        // This is a base64 representation of a minimal PDF file
+        // In a real implementation, you would replace this with your actual resume PDF encoded as base64
+        const resumeBase64 = "JVBERi0xLjcKJeLjz9MKNSAwIG9iago8PAovRmlsdGVyIC9GbGF0ZURlY29kZQovTGVuZ3RoIDM4Cj4+CnN0cmVhbQp4nCvkMlAwUDC1NNUzMVGwMDHUszQ1tVJIzs8rSczM4wIAQ+8GYAplbmRzdHJlYW0KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL01lZGlhQm94IFswIDAgNTk1LjMyIDg0MS45Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCi9QYXJlbnQgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL1RpbWVzLVJvbWFuCj4+CmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYNCjAwMDAwMDAyNzQgMDAwMDAgbg0KMDAwMDAwMDIxNSAwMDAwMCBuDQowMDAwMDAwMDk0IDAwMDAwIG4NCjAwMDAwMDAzMjMgMDAwMDAgbg0KMDAwMDAwMDAwOSAwMDAwMCBuDQp0cmFpbGVyCjw8Ci9TaXplIDYKL1Jvb3QgMSAwIFIKPj4Kc3RhcnR4cmVmCjM5MQolJUVPRgo=";
+
+        // Function to trigger download of base64 encoded file
+        function downloadBase64File(base64Data, fileName, mimeType) {
+            const linkSource = `data:${mimeType};base64,${base64Data}`;
+            const downloadLink = document.createElement('a');
+            
+            downloadLink.href = linkSource;
+            downloadLink.download = fileName;
+            downloadLink.click();
+            downloadLink.remove();
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             const resumeButton = document.querySelector('.resume-button');
             resumeButton.addEventListener('click', function() {
-                alert('Resume download functionality would be implemented here');
+                // Trigger download of the resume PDF
+                downloadBase64File(resumeBase64, 'Divij_Sharma_Resume.pdf', 'application/pdf');
             });
             
             const contactForm = document.querySelector('.contact-form');
