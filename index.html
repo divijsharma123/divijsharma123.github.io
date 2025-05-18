@@ -694,11 +694,23 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-
             const contactForm = document.querySelector('.contact-form');
             contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Form submission functionality would be implemented here');
+                e.preventDefault(); // Prevent the default form submission
+
+                const nameInput = this.querySelector('input[type="text"]');
+                const emailInput = this.querySelector('input[type="email"]');
+                const messageTextarea = this.querySelector('textarea');
+
+                const name = encodeURIComponent(nameInput.value);
+                const email = encodeURIComponent(emailInput.value);
+                const message =encodeURIComponent(messageTextarea.value);
+                const subject = encodeURIComponent('New Message from Your Portfolio');
+                const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage:%0D%0A${message}`; // %0D%0A for line breaks
+
+                const mailtoUrl = `mailto:sharmadivij2111@gmail.com?subject=${subject}&body=${body}`;
+
+                window.location.href = mailtoUrl; // Open the user's email client
             });
 
             // Smooth scrolling for anchor links
